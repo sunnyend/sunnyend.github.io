@@ -4,6 +4,9 @@ const pokemonName = document.querySelector(".pokemon_name");
 const pokemonNumber = document.querySelector(".pokemon_number");
 const pokemonImage = document.querySelector(".pokemon_image");
 const shinyOrNot = document.querySelector(".shiny-version");
+const form = document.querySelector(".form");
+const input = document.querySelector(".input_search");
+
 
 
 
@@ -15,13 +18,7 @@ const fetchPokemon = async (pokemon) => {
   const data = await APIResponse.json();
   return data;
 };
-
-
-
-
-
 let pokemonType = "default"
-
 
 const renderPokemon = async (pokemon) => {
 
@@ -36,9 +33,15 @@ const renderPokemon = async (pokemon) => {
 shinyOrNot.addEventListener("click", () => {
     pokemonType == "default" ? pokemonType = "shiny" : pokemonType = "default";
     shinyOrNot.innerHTML == "versão shiny" ? shinyOrNot.innerHTML = "versão padrão"  : shinyOrNot.innerHTML = "versão shiny"
-    renderPokemon("151");
-
+    renderPokemon(input.value);
+ 
     
 })
 
-renderPokemon("151");
+form.addEventListener("submit",(event) => {
+
+  event.preventDefault();
+  renderPokemon(input.value);
+
+})
+
