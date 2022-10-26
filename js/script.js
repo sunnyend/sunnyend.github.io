@@ -43,11 +43,11 @@ renderPokemon(randomPoke);
 shinyOrNot.addEventListener("click", () => {
     pokemonType == "default" ? pokemonType = "shiny" :   pokemonType = "default";
     shinyOrNot.innerHTML == "versão shiny" ? shinyOrNot.innerHTML = "versão padrão"  : shinyOrNot.innerHTML = "versão shiny";
-    input.value == "" ? renderPokemon(currentPoke) : renderPokemon(input.value);
+    renderPokemon(currentPoke);
     
 })
 
-form.addEventListener("submit",(event) => {
+form.addEventListener("submit",(event) => { 
   
   event.preventDefault();
   renderPokemon(input.value);
