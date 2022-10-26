@@ -5,7 +5,6 @@ Really, REALLY incomplete, but i wanted to publish this since I'm really liking 
 There are a few TODOs that aren't included in the youtube class.</br>
 
 <ul>
-  <li>first one was a shiny button that switches forms onclick event.</li>
 <li>ability to switch between front and back views when clicking on a DPAD.</li>
 <li>ability to change the generation sprite (ie pokemon black, red, etc etc) </li>
  On a side note, I think this will be really hard to achieve, so I'm leaving this to the end.
