@@ -1,4 +1,11 @@
 # pokeDEX
+
+<div id="header" align="center">
+  <img src="https://media.tenor.com/KKdd0koqb0YAAAAd/pikachu-pokemon.gif" width="300"/>
+</div>
+
+-----------
+
 This pokeDEX model was taken from a youtube class. I chose this project in specific cause I like both js and pokemon, so why not? Also, i'm studying APIs for now.
 Really, REALLY incomplete, but i wanted to publish this since I'm really liking it.
 
