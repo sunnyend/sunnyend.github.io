@@ -50,7 +50,7 @@ shinyOrNot.addEventListener("click", () => {
 form.addEventListener("submit",(event) => { 
   
   event.preventDefault();
-  renderPokemon(input.value);
+  renderPokemon(input.value.toLowerCase());
 
 })
 
@@ -63,4 +63,5 @@ btnAnte.addEventListener("click", () => {
 btnProx.addEventListener("click", () => {
   input.value == "" ? renderPokemon(randomPoke += 1) : renderPokemon(currentPoke+1);
   
-})
+});
+
